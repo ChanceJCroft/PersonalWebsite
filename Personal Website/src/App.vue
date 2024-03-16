@@ -1,25 +1,22 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HeaderBar from './components/HeaderBar.vue'
+import SkillsDisplay from './components/SkillsDisplay.vue'
 </script>
 
 <template>
-  <header>
-    <div>
-      <HeaderBar></HeaderBar>
+  <HeaderBar></HeaderBar>
 
-      <!--<nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>-->
-    </div>
-  </header>
-
+  <SkillsDisplay />
   <!--<RouterView />-->
 </template>
 
 <style scoped>
-header {
+#app {
+  width: 100vh;
+  height: 100vh;
+}
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -79,5 +76,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>
