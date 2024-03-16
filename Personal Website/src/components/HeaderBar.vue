@@ -4,11 +4,11 @@ import ContactInfo from './ContactInfo.vue'
 </script>
 
 <template>
-  <div class="container">
-    <div class="row align-items-start text-center">
-      <div class="col img-div"><img src="../assets/images/orc.jpg" class="img" /></div>
-      <div class="col"><HeaderTitle /></div>
-      <div class="col"><ContactInfo /></div>
+  <div class="container px-4">
+    <div class="row justify-content-evenly">
+      <div class="col img-div p-4"><img src="../assets/images/orc.jpg" class="img" /></div>
+      <div class="col p-4"><HeaderTitle /></div>
+      <div class="col p-4"><ContactInfo /></div>
     </div>
   </div>
 </template>
@@ -16,11 +16,19 @@ import ContactInfo from './ContactInfo.vue'
 <style scoped>
 .img-div {
   max-width: 25vh;
-  max-height: 40vh;
+  max-height: 35vh;
 }
 
 .img {
   height: 100%;
   width: 100%;
+}
+
+.test {
+  color: red;
+}
+
+.container {
+  max-width: 100%;
 }
 </style>
