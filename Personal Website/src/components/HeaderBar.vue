@@ -8,7 +8,7 @@ import ContactInfo from './ContactInfo.vue'
     <div class="row justify-content-evenly">
       <div class="col img-div p-4"><img src="../assets/images/orc.jpg" class="img" /></div>
       <div class="col p-4"><HeaderTitle /></div>
-      <div class="col p-4"><ContactInfo /></div>
+      <div class="col p-4 contact-info"><ContactInfo /></div>
     </div>
   </div>
 </template>
@@ -30,5 +30,10 @@ import ContactInfo from './ContactInfo.vue'
 
 .container {
   max-width: 100%;
+  margin: auto;
+}
+
+.contact-info {
+  max-width: 50vh;
 }
 </style>

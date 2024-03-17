@@ -1,15 +1,26 @@
+<!-- eslint-disable vue/valid-v-on -->
 <script lang="ts" setup>
-import IndividualSkillDisplay from './IndividualSkillDisplay.vue'
+import IndividualSkillSummary from './IndividualSkillSummary.vue'
+import type { IndividualSkill } from './types/types'
 import { skills } from './objects/skills'
+
+let currentlySelectedSkill: IndividualSkill | null = null
+
+function individualSkillSelected(skill: IndividualSkill | null) {
+  currentlySelectedSkill = skill
+  console.log(currentlySelectedSkill)
+}
 </script>
 
 <template>
   <div>
-    <h1 class="d-flex justify-content-center mt-5">Skills go here</h1>
-    <!-- Here we will do a foreach loop and create a IndividualSkill component for each skill which will be a hard coded object -->
-    <!-- Add props to the IndividualSkill component, and pass them in during the foreach loop -->
-    <div v-for="skill in skills" :key="skill.title">
-      <IndividualSkillDisplay :skill="skill" />
+    <h1 class="d-flex justify-content-center mt-5">Skills</h1>
+    <div class="container">
+      <div class="row">
+        <div v-for="skill in skills" :key="skill.title" class="col">
+          <IndividualSkillSummary :skill="skill" @selected="individualSkillSelected" />
+        </div>
+      </div>
     </div>
   </div>
 </template>

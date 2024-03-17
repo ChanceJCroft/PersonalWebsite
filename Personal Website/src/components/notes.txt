@@ -1,0 +1,16 @@
+//TODO
+
+
+1. Create a 'view' for the IndividualSkillSummary, or figure out how to use the component directly
+2. Figure out how to use the router to direct which specific skill route to use
+    - Figure out how to emit an event or pass in the selected specific skill as a prop as it reroutes
+
+
+or
+
+
+
+//THIS ONLY WORKS WITH VUEX -- TRY THE ABOVE METHOD
+1. Figure out how to use v-if/v-else or v-show to conditionally display the specific IndividualSkill when selected
+    - Possibly use a boolean value for which view is displayed. And emit an event on click which the specific title being used as an IndividualSkill
+2. Create a way to switch back to the normal view from the v-if/v-else
