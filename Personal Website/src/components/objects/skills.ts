@@ -27,7 +27,7 @@ export const skills: Array<IndividualSkill> = [
     icon: 'https://ih1.redbubble.net/image.404020083.1876/pp,504x498-pad,600x600,f8f8f8.u7.jpg'
   },
   {
-    title: 'HTML/CSS',
+    title: 'HTML',
     description: 'Test Message',
     experience: 'Test experience',
     icon: 'https://i.pinimg.com/474x/fe/57/10/fe571020f2e476bca20e1ae6441569ec.jpg'

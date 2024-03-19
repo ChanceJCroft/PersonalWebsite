@@ -4,7 +4,7 @@ import ContactInfo from './ContactInfo.vue'
 </script>
 
 <template>
-  <div class="container px-4">
+  <div class="container px-4 bg-info">
     <div class="row justify-content-evenly">
       <div class="col img-div p-4"><img src="../assets/images/orc.jpg" class="img" /></div>
       <div class="col p-4"><HeaderTitle /></div>

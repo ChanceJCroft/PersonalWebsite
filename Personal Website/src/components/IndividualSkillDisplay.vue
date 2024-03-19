@@ -3,6 +3,7 @@
     <h1>{{ skill.title }}</h1>
     <h4>{{ skill.description }}</h4>
     <h4>{{ skill.experience }}</h4>
+    <RouterLink to="/">Back to skills</RouterLink>
   </div>
 </template>
 

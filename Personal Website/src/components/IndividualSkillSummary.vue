@@ -1,7 +1,9 @@
 <template>
   <div>
     <v-if skill.icon>
-      <img :src="skill.icon" class="img" alt="" v-on:click="$emit('selected', skill)" />
+      <RouterLink :to="skill.title">
+        <img :src="skill.icon" class="img" alt="" v-on:click="$emit('selected', skill)" />
+      </RouterLink>
     </v-if>
     <h3>{{ skill.title }}</h3>
   </div>
