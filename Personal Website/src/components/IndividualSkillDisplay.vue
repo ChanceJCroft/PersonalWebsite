@@ -1,5 +1,6 @@
 <template>
   <div>
+    <img :src="skill.icon" alt="icon" class="img" />
     <h1>{{ skill.title }}</h1>
     <h4>{{ skill.description }}</h4>
     <h4>{{ skill.experience }}</h4>
@@ -14,3 +15,10 @@ defineProps<{
   skill: IndividualSkill
 }>()
 </script>
+
+<style scoped>
+.img {
+  max-width: 25vh;
+  max-height: 25vh;
+}
+</style>
