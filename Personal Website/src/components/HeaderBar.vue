@@ -5,7 +5,7 @@ import ContactInfo from './ContactInfo.vue'
 
 <template>
   <div class="container px-4 bg-info">
-    <div class="row justify-content-evenly">
+    <div class="row">
       <div class="col img-div p-4"><img src="../assets/images/orc.jpg" class="img" /></div>
       <div class="col p-4"><HeaderTitle /></div>
       <div class="col p-4 contact-info"><ContactInfo /></div>
@@ -35,5 +35,9 @@ import ContactInfo from './ContactInfo.vue'
 
 .contact-info {
   max-width: 50vh;
+}
+
+.col {
+  min-width: 25%;
 }
 </style>

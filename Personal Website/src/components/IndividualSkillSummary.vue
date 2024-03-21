@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-if skill.icon>
-      <RouterLink :to="skill.title">
-        <img :src="skill.icon" class="img" alt="" v-on:click="$emit('selected', skill)" />
+      <RouterLink :to="skill.title" class="skill">
+        <img :src="skill.icon" class="img" alt="" />
       </RouterLink>
     </v-if>
     <h3>{{ skill.title }}</h3>
@@ -21,5 +21,10 @@ defineProps<{
 .img {
   max-width: 50px;
   max-height: 50px;
+}
+
+/* TODO: Lookup best practices for hover feedback */
+.skill :hover {
+  border: 5px solid blue;
 }
 </style>

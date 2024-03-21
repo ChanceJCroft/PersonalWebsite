@@ -10,9 +10,8 @@
 
     <address>
       <strong>Links</strong><br />
-      <a href="https://www.linkedin.com/in/chance-croft/"
-        >https://www.linkedin.com/in/chance-croft/</a
-      >
+      <a href="https://www.linkedin.com/in/chance-croft/">LinkedIn</a><br />
+      <a href="https://github.com/ChanceJCroft">GitHub</a>
     </address>
   </div>
 </template>

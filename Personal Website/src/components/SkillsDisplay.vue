@@ -1,15 +1,7 @@
 <!-- eslint-disable vue/valid-v-on -->
 <script lang="ts" setup>
 import IndividualSkillSummary from './IndividualSkillSummary.vue'
-import type { IndividualSkill } from './types/types'
 import { skills } from './objects/skills'
-
-let currentlySelectedSkill: IndividualSkill | null = null
-
-function individualSkillSelected(skill: IndividualSkill | null) {
-  currentlySelectedSkill = skill
-  console.log(currentlySelectedSkill)
-}
 </script>
 
 <template>
@@ -18,7 +10,7 @@ function individualSkillSelected(skill: IndividualSkill | null) {
     <div class="container">
       <div class="row">
         <div v-for="skill in skills" :key="skill.title" class="col">
-          <IndividualSkillSummary :skill="skill" @selected="individualSkillSelected" />
+          <IndividualSkillSummary :skill="skill" />
         </div>
       </div>
     </div>
