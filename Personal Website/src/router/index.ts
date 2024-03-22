@@ -2,17 +2,7 @@ import IndividualSkillDisplay from '@/components/IndividualSkillDisplay.vue'
 import SkillsDisplay from '@/components/SkillsDisplay.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { skills } from '@/components/objects/skills'
-import type { IndividualSkill } from '@/components/types/types'
 
-/* const newRoutes = skills.forEach((skill: IndividualSkill) => {
-  return {
-    path: '/' + skill.title,
-    name: skill.title,
-    component: IndividualSkillDisplay,
-    props: //Conditionally add props 
-  }
-}); */
-//TODO -- Refactor this to conditionally display the skills based on skill data
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,49 +10,20 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: SkillsDisplay
-    },
-    {
-      path: '/typescript',
-      name: 'typescript',
-      component: IndividualSkillDisplay,
-      props: { skill: skills[0] }
-    },
-    {
-      path: '/php',
-      name: 'php',
-      component: IndividualSkillDisplay,
-      props: { skill: skills[1] }
-    },
-    {
-      path: '/vue',
-      name: 'vue',
-      component: IndividualSkillDisplay,
-      props: { skill: skills[2] }
-    },
-    {
-      path: '/jest',
-      name: 'jest',
-      component: IndividualSkillDisplay,
-      props: { skill: skills[3] }
-    },
-    {
-      path: '/html',
-      name: 'html',
-      component: IndividualSkillDisplay,
-      props: { skill: skills[4] }
-    },
-    {
-      path: '/aws',
-      name: 'aws',
-      component: IndividualSkillDisplay,
-      props: { skill: skills[5] }
-    },
-    {
-      path: '/figma',
-      name: 'figma',
-      component: IndividualSkillDisplay,
-      props: { skill: skills[6] }
     }
   ]
 })
+
+//Conditionally add new routes based on what skills are in the skills object
+for (let i = 0; i < skills.length; i++) {
+  const newRoute = {
+    path: '/' + skills[i].title,
+    name: skills[i].title,
+    component: IndividualSkillDisplay,
+    props: { skill: skills[i] }
+  }
+
+  router.addRoute(newRoute)
+}
+
 export default router

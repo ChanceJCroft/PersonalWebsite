@@ -12,6 +12,9 @@ import HeaderBar from './components/HeaderBar.vue'
       <component :is="Component"></component>
     </transition>
   </router-view>
+  <footer class="footer">
+    <p class="mt-3">© 2024 Chance Croft</p>
+  </footer>
 </template>
 
 <style scoped>
@@ -31,5 +34,16 @@ import HeaderBar from './components/HeaderBar.vue'
 .slide-leave-to {
   opacity: 0;
   transform: translateX(-30%);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(13, 202, 240, 1);
+  color: black;
+  text-align: center;
+  border-top: 1px solid black;
 }
 </style>

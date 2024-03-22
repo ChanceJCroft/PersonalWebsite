@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <v-if skill.icon>
-      <RouterLink :to="skill.title" class="skill">
-        <img :src="skill.icon" class="img" alt="" />
-      </RouterLink>
-    </v-if>
-    <h3>{{ skill.title }}</h3>
+  <div class="skill-container text-center">
+    <div>
+      <v-if skill.icon>
+        <RouterLink :to="skill.title">
+          <img :src="skill.icon" class="img" alt="" />
+        </RouterLink>
+      </v-if>
+      <h3>{{ skill.title }}</h3>
+    </div>
   </div>
 </template>
 
@@ -24,7 +26,7 @@ defineProps<{
 }
 
 /* TODO: Lookup best practices for hover feedback */
-.skill :hover {
+.skill-container :hover {
   border: 5px solid blue;
 }
 </style>

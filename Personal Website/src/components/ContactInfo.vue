@@ -1,11 +1,10 @@
 <template>
-  <div class="m-5 contact-info-main">
+  <div class="m-3 contact-info-main">
     <address>
       <strong>Contact Info</strong><br />
-      1234 Example Street<br />
-      Antartica, Example 0987<br />
       <a href="mailto:chance.croft2@gmail.com">chance.croft2@gmail.com</a><br />
-      (123) 456-7890
+      Oklahoma City, OK 73120<br />
+      (599) 231-4140
     </address>
 
     <address>
@@ -19,5 +18,8 @@
 <style scoped>
 .contact-info-main {
   max-width: 100%;
+  border: 1px solid black;
+  padding: 2vh;
+  border-radius: 25px;
 }
 </style>

@@ -4,9 +4,11 @@ import ContactInfo from './ContactInfo.vue'
 </script>
 
 <template>
-  <div class="container px-4 bg-info">
+  <div class="container px-4">
     <div class="row">
-      <div class="col img-div p-4"><img src="../assets/images/orc.jpg" class="img" /></div>
+      <div class="col img-div p-4 text-center">
+        <img src="../assets/images/chance.jpg" class="img" />
+      </div>
       <div class="col p-4"><HeaderTitle /></div>
       <div class="col p-4 contact-info"><ContactInfo /></div>
     </div>
@@ -20,17 +22,16 @@ import ContactInfo from './ContactInfo.vue'
 }
 
 .img {
-  height: 100%;
-  width: 100%;
-}
-
-.test {
-  color: red;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 100%;
 }
 
 .container {
   max-width: 100%;
   margin: auto;
+  border-bottom: 1px solid black;
+  background-image: url('../assets/images/circuit-board.jpg');
 }
 
 .contact-info {

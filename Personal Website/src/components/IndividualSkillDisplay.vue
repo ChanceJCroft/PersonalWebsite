@@ -3,9 +3,13 @@
     <div class="text-center">
       <img :src="skill.icon" alt="icon" class="img" />
       <h1>{{ skill.title }}</h1>
-      <h4>{{ skill.description }}</h4>
+      <p>
+        <strong
+          ><i>{{ skill.description }}</i>
+        </strong>
+      </p>
       <br />
-      <h4>{{ skill.experience }}</h4>
+      <p>{{ skill.experience }}</p>
       <RouterLink to="/"
         ><button type="button" class="btn btn-outline-info">Back to skills</button></RouterLink
       >

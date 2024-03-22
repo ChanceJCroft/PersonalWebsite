@@ -1,12 +1,14 @@
 <template>
   <div>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu risus mauris. Sed eu tincidunt
-    tellus, a tempor leo. Fusce consectetur neque ac erat mollis pretium. Maecenas sollicitudin vel
-    nisi quis varius. Integer bibendum feugiat quam, sed pretium dui sodales eu. Maecenas venenatis
-    nulla magna, nec mollis risus tempus id. Nullam congue bibendum magna, ut molestie neque rutrum
-    vel. Donec vitae nibh accumsan, tristique massa ac, accumsan turpis. Etiam ligula quam,
-    ullamcorper eu vulputate ac, luctus vel elit. Quisque posuere ex vitae augue porttitor, at
-    ornare metus pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc enim mi,
-    porta.
+    Hi! My name is Chance, and I'm a Software Developer with multiple years of both Frontend and
+    Backend Web Development. I have multiple years experience working on enterprise level
+    applications using the technologies you see listed below (this website was made using Vue.js and
+    vue-router to create a single-page application). Feel free to click on any of the icons to get
+    more information about my specific experience with that technology.
+  </div>
+  <br />
+  <div>
+    Outside of the listed experience I'm currently studying C# and .NET Core and have a strong
+    desire to expose myself to technologies outside of web development.
   </div>
 </template>
