@@ -26,8 +26,4 @@
   font-weight: 400;
   font-style: normal;
 }
-
-a:link,
-a:visited {
-}
 </style>
