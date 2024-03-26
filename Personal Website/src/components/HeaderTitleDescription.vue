@@ -1,10 +1,9 @@
 <template>
-  <div>
+  <div class="mt-4">
     Hi! My name is Chance, and I'm a Software Developer with multiple years of both Frontend and
-    Backend Web Development. I have multiple years experience working on enterprise level
-    applications using the technologies you see listed below (this website was made using Vue.js and
-    vue-router to create a single-page application). Feel free to click on any of the icons to get
-    more information about my specific experience with that technology.
+    Backend Web Development. I have multiple years of experience working on enterprise level
+    applications using the technologies you see listed below. Feel free to click on any of the icons
+    to get more information about my specific experience with that technology.
   </div>
   <br />
   <div>
@@ -12,3 +11,11 @@
     desire to expose myself to technologies outside of web development.
   </div>
 </template>
+
+<style scoped>
+div {
+  font-family: 'Tauri', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>

@@ -18,7 +18,7 @@ import ContactInfo from './ContactInfo.vue'
 <style scoped>
 .img-div {
   max-width: 25vh;
-  max-height: 35vh;
+  max-height: 40vh;
 }
 
 .img {
@@ -29,13 +29,16 @@ import ContactInfo from './ContactInfo.vue'
 
 .container {
   max-width: 100%;
+  max-height: 50vh;
   margin: auto;
   border-bottom: 1px solid black;
   background-image: url('../assets/images/circuit-board.jpg');
+  color: white;
 }
 
 .contact-info {
-  max-width: 50vh;
+  max-width: 33vh;
+  margin-top: 3vh;
 }
 
 .col {

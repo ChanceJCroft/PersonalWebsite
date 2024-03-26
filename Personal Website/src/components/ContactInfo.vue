@@ -18,8 +18,16 @@
 <style scoped>
 .contact-info-main {
   max-width: 100%;
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 2vh;
   border-radius: 25px;
+  background-color: #cc7e81;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:link,
+a:visited {
 }
 </style>

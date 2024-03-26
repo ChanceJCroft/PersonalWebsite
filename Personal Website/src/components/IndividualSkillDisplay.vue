@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex justify-content-center mt-2">
-    <div class="text-center">
+    <div class="text-center container">
       <img :src="skill.icon" alt="icon" class="img" />
       <h1>{{ skill.title }}</h1>
       <p>
@@ -11,7 +11,7 @@
       <br />
       <p>{{ skill.experience }}</p>
       <RouterLink to="/"
-        ><button type="button" class="btn btn-outline-info">Back to skills</button></RouterLink
+        ><button type="button" class="btn btn-primary active">Back to skills</button></RouterLink
       >
     </div>
   </div>
@@ -27,7 +27,8 @@ defineProps<{
 
 <style scoped>
 .img {
-  max-width: 25vh;
-  max-height: 25vh;
+  max-width: 20vh;
+  max-height: 20vh;
+  padding-top: 3vh;
 }
 </style>

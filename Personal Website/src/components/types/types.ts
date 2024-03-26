@@ -3,4 +3,5 @@ export type IndividualSkill = {
   description: string
   experience: string
   icon: string
+  path: string
 }

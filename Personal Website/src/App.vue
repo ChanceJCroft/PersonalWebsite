@@ -1,6 +1,21 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import HeaderBar from './components/HeaderBar.vue'
+
+//Send an alert that this is version 1.0 with mobile formatting TODO
+const versionOneAlert: string =
+  'Hello, and welcome to my website! Please note that this is an early build, and so the mobile formatting likely will not work as expected. Besides that, feel free to poke around with how everything is currently setup and reach out with any questions.'
+
+function load() {
+  var isFired = localStorage.getItem('checkFired')
+
+  if (isFired != '1') {
+    alert(versionOneAlert)
+    localStorage.setItem('checkFired', '1')
+  }
+}
+
+load()
 </script>
 
 <template>
@@ -41,8 +56,8 @@ import HeaderBar from './components/HeaderBar.vue'
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(13, 202, 240, 1);
-  color: black;
+  background-image: url('./assets/images/circuit-board.jpg');
+  color: white;
   text-align: center;
   border-top: 1px solid black;
 }
