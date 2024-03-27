@@ -8,7 +8,7 @@ export const skills: Array<IndividualSkill> = [
       'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.',
     experience:
       "I've spent over 2 years of my professional career utilizing TypeScript to debug and add functionality to a legacy enterprise level application. Most of this time was with a Vue application and a .NET backend, but do have some experience using TypeScript with React. I also have experience from past projects utilizing TypeScript with React. This website uses TypeScript!",
-    icon: 'public/images/Typescript_logo.png',
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png',
     path: 'typescript'
   },
   {
