@@ -60,5 +60,8 @@ load()
   color: white;
   text-align: center;
   border-top: 1px solid black;
+  font-family: 'Tauri', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 </style>

@@ -4,7 +4,7 @@
       <strong>Contact Info</strong><br />
       <a href="mailto:chance.croft2@gmail.com">chance.croft2@gmail.com</a><br />
       Oklahoma City, OK 73120<br />
-      (599) 231-4140
+      (559) 231-4140
     </address>
 
     <address>
@@ -25,5 +25,9 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+a {
+  color: #110e73;
 }
 </style>

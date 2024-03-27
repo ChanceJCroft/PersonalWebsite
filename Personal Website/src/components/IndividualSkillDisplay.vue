@@ -11,7 +11,7 @@
       <br />
       <p>{{ skill.experience }}</p>
       <RouterLink to="/"
-        ><button type="button" class="btn btn-primary active">Back to skills</button></RouterLink
+        ><button type="button" class="btn btn-primary">Back to skills</button></RouterLink
       >
     </div>
   </div>
@@ -30,5 +30,20 @@ defineProps<{
   max-width: 20vh;
   max-height: 20vh;
   padding-top: 3vh;
+}
+
+.btn-primary {
+  background-color: #cc7e81;
+  border-color: #cc7e81;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:disabled,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #a36567 !important;
+  border-color: #a36567 !important;
 }
 </style>

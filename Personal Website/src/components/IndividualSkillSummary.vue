@@ -20,6 +20,8 @@ defineProps<{
 <style scoped>
 .main {
   overflow: auto;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
 }
 
 .img {
@@ -35,7 +37,7 @@ defineProps<{
 /* TODO: Lookup best practices for hover feedback */
 .skill-container :hover {
   opacity: 50%;
-  border: 1px solid blue;
+  border: 1px solid #110e73;
   box-sizing: border-box;
 }
 </style>

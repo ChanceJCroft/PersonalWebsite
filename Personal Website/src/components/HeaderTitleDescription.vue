@@ -1,9 +1,9 @@
 <template>
   <div class="mt-4">
-    Hi! My name is Chance, and I'm a Software Developer with multiple years of both Frontend and
-    Backend Web Development. I have multiple years of experience working on enterprise level
-    applications using the technologies you see listed below. Feel free to click on any of the icons
-    to get more information about my specific experience with that technology.
+    Hello! My name is Chance, and I'm a Software Developer with multiple years of both Frontend and
+    Backend Web Development. I have extensive experience working on enterprise level applications
+    using the technologies and tools you see listed below. Feel free to click on any of the icons to
+    get more information about my experience in that category.
   </div>
   <br />
   <div>

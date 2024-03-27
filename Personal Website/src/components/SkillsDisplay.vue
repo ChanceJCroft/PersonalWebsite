@@ -6,7 +6,7 @@ import { skills, softSkills } from './objects/skills'
 
 <template>
   <div class="main mt-4">
-    <h1 class="d-flex justify-content-center">Skills</h1>
+    <h1 class="d-flex justify-content-center title">Skills</h1>
     <div class="container">
       <div class="row mt-5">
         <div v-for="skill in skills" :key="skill.title" class="col">
@@ -28,6 +28,11 @@ import { skills, softSkills } from './objects/skills'
   margin: auto;
   padding: auto;
   height: 100%;
+}
+
+.title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
 }
 
 .main {
