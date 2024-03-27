@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/valid-v-on -->
 <script lang="ts" setup>
 import IndividualSkillSummary from './IndividualSkillSummary.vue'
 import { skills, softSkills } from './objects/skills'
