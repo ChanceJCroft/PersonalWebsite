@@ -29,6 +29,7 @@ import ContactInfo from './ContactInfo.vue'
 
 .container {
   max-width: 100%;
+  min-width: 100vh;
   max-height: 50vh;
   margin: auto;
   border-bottom: 1px solid black;

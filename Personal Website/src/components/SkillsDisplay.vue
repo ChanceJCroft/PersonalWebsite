@@ -37,5 +37,7 @@ import { skills, softSkills } from './objects/skills'
 
 .main {
   height: 100%;
+  width: 100%;
+  margin: auto;
 }
 </style>
