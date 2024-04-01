@@ -4,7 +4,7 @@ import ContactInfo from './ContactInfo.vue'
 </script>
 
 <template>
-  <div class="main">
+  <div v-if="$windowWidth > 600" class="main">
     <div class="container px-4">
       <div class="row">
         <div class="col img-div p-4 text-center">
@@ -12,6 +12,19 @@ import ContactInfo from './ContactInfo.vue'
         </div>
         <div class="col p-4"><HeaderTitle /></div>
         <div class="col p-4 contact-info"><ContactInfo /></div>
+      </div>
+    </div>
+  </div>
+  <div v-else>
+    <div class="container px-4">
+      <div class="row">
+        <div class="col img-div p-3 text-center">
+          <img src="../assets/images/chance.jpg" class="img" />
+        </div>
+        <div class="col p-3 center"><HeaderTitle /></div>
+      </div>
+      <div class="col contact-info">
+        <ContactInfo />
       </div>
     </div>
   </div>
@@ -31,7 +44,6 @@ import ContactInfo from './ContactInfo.vue'
 
 .container {
   min-width: 100vw !important;
-  max-height: 50vh;
   margin: auto;
   border-bottom: 1px solid black;
   background-image: url('../assets/images/circuit-board.jpg');
@@ -51,5 +63,9 @@ import ContactInfo from './ContactInfo.vue'
   height: 100%;
   width: 100%;
   margin: auto;
+}
+
+.center {
+  vertical-align: bottom !important;
 }
 </style>

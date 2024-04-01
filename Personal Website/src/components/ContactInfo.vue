@@ -1,5 +1,5 @@
 <template>
-  <div class="m-3 contact-info-main">
+  <div class="m-3" :class="$windowWidth > 600 ? 'contact-info-main' : 'contact-info-mobile'">
     <address>
       <strong>Contact Info</strong><br />
       <a href="mailto:chance.croft2@gmail.com" class="email">chance.croft2@gmail.com</a><br />
@@ -17,8 +17,18 @@
 
 <style scoped>
 .contact-info-main {
-  max-width: 100%;
   min-width: 100%;
+  border: 1px solid white;
+  padding: 2vh;
+  border-radius: 25px;
+  background-color: #cc7e81;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-info-mobile {
+  min-width: 80vw;
   border: 1px solid white;
   padding: 2vh;
   border-radius: 25px;
@@ -35,5 +45,15 @@ a {
 .email {
   padding-right: 10px !important;
   word-break: break-all;
+}
+
+.test {
+  background-color: red;
+  color: red;
+}
+
+.two-test {
+  background-color: green;
+  color: green;
 }
 </style>

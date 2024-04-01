@@ -5,6 +5,7 @@ import HeaderTitleDescription from './HeaderTitleDescription.vue'
 <template>
   <div>
     <h1 class="text-center fira-sans-semibold-italic">Chance Croft</h1>
+    <br />
     <h4 class="text-center fira-sans-semibold-italic">Software Developer</h4>
     <HeaderTitleDescription />
   </div>
@@ -17,7 +18,16 @@ import HeaderTitleDescription from './HeaderTitleDescription.vue'
   font-style: italic;
 }
 
+.center-text {
+  display: flex;
+}
+
 div {
   height: 100% !important;
+}
+
+.test {
+  display: flex;
+  align-items: center;
 }
 </style>
