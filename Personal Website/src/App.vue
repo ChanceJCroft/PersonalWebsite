@@ -31,8 +31,13 @@ load()
 
 <style scoped>
 #app {
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  margin: 0;
 }
 
 .slide-enter-active,
@@ -50,8 +55,9 @@ load()
 
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   background-image: url('./assets/images/circuit-board.jpg');
   color: white;

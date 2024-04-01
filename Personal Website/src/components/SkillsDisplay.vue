@@ -14,7 +14,7 @@ import { skills, softSkills } from './objects/skills'
         </div>
       </div>
       <div class="w-100"></div>
-      <div class="row mt-5">
+      <div class="row mt-5 pb-3">
         <div v-for="skill in softSkills" :key="skill.title" class="col">
           <IndividualSkillSummary :skill="skill" />
         </div>
@@ -39,19 +39,5 @@ import { skills, softSkills } from './objects/skills'
   height: 100%;
   width: 100%;
   margin: auto;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    margin: auto !important;
-    min-width: 100vh;
-    max-height: 100%;
-  }
-
-  .title {
-    margin: auto !important;
-    justify-content: center;
-    width: 100vh;
-  }
 }
 </style>

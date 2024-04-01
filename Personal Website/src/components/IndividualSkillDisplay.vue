@@ -46,11 +46,4 @@ defineProps<{
   background-color: #a36567 !important;
   border-color: #a36567 !important;
 }
-
-@media only screen and(max-width: 600px) {
-  .main {
-    width: 100vh !important;
-    margin: auto !important;
-  }
-}
 </style>

@@ -34,5 +34,6 @@ a {
 
 .email {
   padding-right: 10px !important;
+  word-break: break-all;
 }
 </style>
