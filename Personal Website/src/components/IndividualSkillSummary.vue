@@ -4,7 +4,7 @@
       <RouterLink :to="skill.path" class="skill-container">
         <img :src="skill.icon" class="img" alt="" />
       </RouterLink>
-      <h3 class="pt-2">{{ skill.title }}</h3>
+      <h3 class="pt-2 skill-title">{{ skill.title }}</h3>
     </div>
   </div>
 </template>
@@ -39,5 +39,9 @@ defineProps<{
   opacity: 50%;
   border: 1px solid #110e73;
   box-sizing: border-box;
+}
+
+.skill-title {
+  padding-bottom: 30px;
 }
 </style>

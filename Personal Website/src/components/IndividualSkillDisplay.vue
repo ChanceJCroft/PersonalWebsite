@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center mt-2">
+  <div class="d-flex justify-content-center mt-2 main">
     <div class="text-center container">
       <img :src="skill.icon" alt="icon" class="img" />
       <h1>{{ skill.title }}</h1>
@@ -45,5 +45,12 @@ defineProps<{
 .open > .dropdown-toggle.btn-primary {
   background-color: #a36567 !important;
   border-color: #a36567 !important;
+}
+
+@media only screen and(max-width: 600px) {
+  .main {
+    width: 100vh !important;
+    margin: auto !important;
+  }
 }
 </style>

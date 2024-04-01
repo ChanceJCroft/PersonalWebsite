@@ -2,7 +2,7 @@
   <div class="m-3 contact-info-main">
     <address>
       <strong>Contact Info</strong><br />
-      <a href="mailto:chance.croft2@gmail.com">chance.croft2@gmail.com</a><br />
+      <a href="mailto:chance.croft2@gmail.com" class="email">chance.croft2@gmail.com</a><br />
       Oklahoma City, OK 73120<br />
       (559) 231-4140
     </address>
@@ -18,6 +18,7 @@
 <style scoped>
 .contact-info-main {
   max-width: 100%;
+  min-width: 100%;
   border: 1px solid white;
   padding: 2vh;
   border-radius: 25px;
@@ -29,5 +30,9 @@
 
 a {
   color: #110e73;
+}
+
+.email {
+  padding-right: 10px !important;
 }
 </style>

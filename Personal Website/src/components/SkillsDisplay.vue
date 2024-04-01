@@ -40,4 +40,18 @@ import { skills, softSkills } from './objects/skills'
   width: 100%;
   margin: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: auto !important;
+    min-width: 100vh;
+    max-height: 100%;
+  }
+
+  .title {
+    margin: auto !important;
+    justify-content: center;
+    width: 100vh;
+  }
+}
 </style>

@@ -16,4 +16,8 @@ import HeaderTitleDescription from './HeaderTitleDescription.vue'
   font-weight: 600;
   font-style: italic;
 }
+
+div {
+  height: 100% !important;
+}
 </style>
