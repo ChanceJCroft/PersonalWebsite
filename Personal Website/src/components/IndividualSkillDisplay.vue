@@ -35,6 +35,7 @@ defineProps<{
 .btn-primary {
   background-color: #cc7e81;
   border-color: #cc7e81;
+  margin-bottom: 10vh;
 }
 
 .btn-primary:hover,
