@@ -7,8 +7,8 @@
   </div>
   <br />
   <div v-show="$windowWidth > 1000">
-    Outside of the listed experience I'm currently studying C# and .NET Core and have a strong
-    desire to expose myself to technologies outside of web development.
+    Outside of the listed experience I'm currently studying Node.js and the OpenAI API. I have a
+    strong desire to expose myself to technologies outside of web development.
   </div>
 </template>
 
