@@ -14,25 +14,24 @@ const router = createRouter({
   ]
 })
 
-//Conditionally add new routes based on what skills are in the skills object
-for (let i = 0; i < skills.length; i++) {
+for (const skill of skills) {
   const newRoute = {
-    path: '/' + skills[i].path,
-    name: skills[i].title,
+    path: '/' + skill.path,
+    name: skill.title,
     component: IndividualSkillDisplay,
-    props: { skill: skills[i] }
+    props: { skill: skill }
   }
 
   router.addRoute(newRoute)
 }
 
-//Conditionally add soft skills, to be combined with skills in future refactoring
-for (let i = 0; i < softSkills.length; i++) {
+//TODO: Experiment with visually displaying soft skills differently than skills
+for (const softSkill of softSkills) {
   const newRoute = {
-    path: '/' + softSkills[i].path,
-    name: softSkills[i].title,
+    path: '/' + softSkill.path,
+    name: softSkill.title,
     component: IndividualSkillDisplay,
-    props: { skill: softSkills[i] }
+    props: { skill: softSkill }
   }
 
   router.addRoute(newRoute)

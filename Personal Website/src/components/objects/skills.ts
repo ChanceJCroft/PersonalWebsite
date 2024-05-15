@@ -1,6 +1,5 @@
 import type { IndividualSkill } from '../types/types'
 
-//Save these images to a new folder and make sure to set the relative path based on THIS file
 export const skills: Array<IndividualSkill> = [
   {
     title: 'TypeScript',
@@ -67,6 +66,7 @@ export const skills: Array<IndividualSkill> = [
   }
 ]
 
+//TODO: Experiment with proof of concept on handling soft skills different both visually and logically
 export const softSkills: Array<IndividualSkill> = [
   {
     title: 'Project Management',

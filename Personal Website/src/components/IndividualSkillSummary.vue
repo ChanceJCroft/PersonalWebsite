@@ -2,7 +2,7 @@
   <div class="text-center main">
     <div>
       <RouterLink :to="skill.path" class="skill-container">
-        <img :src="skill.icon" class="img" alt="" />
+        <img :src="skill.icon" class="img" :alt="skill.title" />
       </RouterLink>
       <h3 class="pt-2 skill-title">{{ skill.title }}</h3>
     </div>

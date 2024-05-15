@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import HeaderBar from './components/HeaderBar.vue'
+
+const currentYear: number = new Date().getFullYear()
+const footerText: string = `© ${currentYear} Chance Croft`
 </script>
 
 <template>
@@ -13,7 +16,7 @@ import HeaderBar from './components/HeaderBar.vue'
     </transition>
   </router-view>
   <footer class="footer">
-    <p class="mt-3">© 2024 Chance Croft</p>
+    <p class="mt-3">{{ footerText }}</p>
   </footer>
 </template>
 

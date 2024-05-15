@@ -11,7 +11,7 @@
       <br />
       <p>{{ skill.experience }}</p>
       <RouterLink to="/"
-        ><button type="button" class="btn btn-primary">Back to skills</button></RouterLink
+        ><button type="button" class="btn btn-primary">{{ backButtonText }}</button></RouterLink
       >
     </div>
   </div>
@@ -19,6 +19,8 @@
 
 <script lang="ts" setup>
 import type { IndividualSkill } from './types/types'
+
+const backButtonText: string = 'Back to skills'
 
 defineProps<{
   skill: IndividualSkill
