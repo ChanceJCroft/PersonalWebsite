@@ -13,7 +13,7 @@ import { skills, softSkills } from './objects/skills'
         </div>
       </div>
       <div class="w-100"></div>
-      <div class="row mt-5">
+      <div class="row mt-5 pb-3">
         <div v-for="skill in softSkills" :key="skill.title" class="col">
           <IndividualSkillSummary :skill="skill" />
         </div>

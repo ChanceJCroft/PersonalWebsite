@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import HeaderBar from './components/HeaderBar.vue'
+
+const currentYear: number = new Date().getFullYear()
+const footerText: string = `© ${currentYear} Chance Croft`
 </script>
 
 <template>
@@ -13,14 +16,19 @@ import HeaderBar from './components/HeaderBar.vue'
     </transition>
   </router-view>
   <footer class="footer">
-    <p class="mt-3">© 2024 Chance Croft</p>
+    <p class="mt-3">{{ footerText }}</p>
   </footer>
 </template>
 
 <style scoped>
 #app {
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  margin: 0;
 }
 
 .slide-enter-active,
@@ -38,8 +46,9 @@ import HeaderBar from './components/HeaderBar.vue'
 
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   background-image: url('./assets/images/circuit-board.jpg');
   color: white;

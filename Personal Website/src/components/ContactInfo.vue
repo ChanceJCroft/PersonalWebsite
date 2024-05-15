@@ -1,23 +1,48 @@
 <template>
-  <div class="m-3 contact-info-main">
+  <div class="m-3" :class="$windowWidth > 600 ? 'contact-info-main' : 'contact-info-mobile'">
     <address>
-      <strong>Contact Info</strong><br />
-      <a href="mailto:chance.croft2@gmail.com">chance.croft2@gmail.com</a><br />
-      Oklahoma City, OK 73120<br />
-      (559) 231-4140
+      <strong>{{ contactInfoTitle }}</strong
+      ><br />
+      <a href="mailto:chance.croft2@gmail.com" class="email">{{ email }}</a
+      ><br />
+      {{ city }}<br />
+      {{ phoneNumber }}
     </address>
 
     <address>
-      <strong>Links</strong><br />
-      <a href="https://www.linkedin.com/in/chance-croft/">LinkedIn</a><br />
-      <a href="https://github.com/ChanceJCroft">GitHub</a>
+      <strong>{{ linksTitle }}</strong
+      ><br />
+      <a href="https://www.linkedin.com/in/chance-croft/">{{ linkedInTitle }}</a
+      ><br />
+      <a href="https://github.com/ChanceJCroft">{{ gitHubTitle }}</a>
     </address>
   </div>
 </template>
 
+<script setup lang="ts">
+const contactInfoTitle: string = 'Contact Info'
+const email: string = 'chance.croft2@gmail.com'
+const city: string = 'Oklahoma City, OK 73120'
+const phoneNumber: string = '(559) 231-4140'
+const linksTitle: string = 'Links'
+const linkedInTitle: string = 'LinkedIn'
+const gitHubTitle: string = 'GitHub'
+</script>
+
 <style scoped>
 .contact-info-main {
-  max-width: 100%;
+  min-width: 100%;
+  border: 1px solid white;
+  padding: 2vh;
+  border-radius: 25px;
+  background-color: #cc7e81;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-info-mobile {
+  min-width: 80vw;
   border: 1px solid white;
   padding: 2vh;
   border-radius: 25px;
@@ -29,5 +54,20 @@
 
 a {
   color: #110e73;
+}
+
+.email {
+  padding-right: 10px !important;
+  word-break: break-all;
+}
+
+.test {
+  background-color: red;
+  color: red;
+}
+
+.two-test {
+  background-color: green;
+  color: green;
 }
 </style>

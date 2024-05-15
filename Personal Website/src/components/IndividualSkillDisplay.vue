@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center mt-2">
+  <div class="d-flex justify-content-center mt-2 main">
     <div class="text-center container">
       <img :src="skill.icon" alt="icon" class="img" />
       <h1>{{ skill.title }}</h1>
@@ -11,7 +11,7 @@
       <br />
       <p>{{ skill.experience }}</p>
       <RouterLink to="/"
-        ><button type="button" class="btn btn-primary">Back to skills</button></RouterLink
+        ><button type="button" class="btn btn-primary">{{ backButtonText }}</button></RouterLink
       >
     </div>
   </div>
@@ -19,6 +19,8 @@
 
 <script lang="ts" setup>
 import type { IndividualSkill } from './types/types'
+
+const backButtonText: string = 'Back to skills'
 
 defineProps<{
   skill: IndividualSkill
@@ -35,6 +37,7 @@ defineProps<{
 .btn-primary {
   background-color: #cc7e81;
   border-color: #cc7e81;
+  margin-bottom: 10vh;
 }
 
 .btn-primary:hover,

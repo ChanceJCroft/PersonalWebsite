@@ -1,16 +1,22 @@
 <template>
-  <div class="mt-4">
-    Hello! My name is Chance, and I'm a Software Developer with multiple years of both Frontend and
-    Backend Web Development. I have extensive experience working on enterprise level applications
-    using the technologies and tools you see listed below. Feel free to click on any of the icons to
-    get more information about my experience in that category.
+  <div class="mt-4" v-if="$windowWidth > 600">
+    {{ mainDescription }}
   </div>
   <br />
-  <div>
-    Outside of the listed experience I'm currently studying C# and .NET Core and have a strong
-    desire to expose myself to technologies outside of web development.
+  <div v-show="$windowWidth > 1000">
+    {{ additionalInfo }}
   </div>
 </template>
+
+<script setup lang="ts">
+const mainDescription: string = `Hello! My name is Chance, and I'm a Software Developer with multiple years of both Frontend and
+    Backend Web Development. I have extensive experience working on enterprise level applications
+    using the technologies and tools you see listed below. Feel free to click on any of the icons to
+    get more information about my experience in that category.`
+
+const additionalInfo: string = `Outside of the listed experience I'm currently studying Node.js and the OpenAI API. I have a
+    strong desire to expose myself to technologies outside of web development.`
+</script>
 
 <style scoped>
 div {
