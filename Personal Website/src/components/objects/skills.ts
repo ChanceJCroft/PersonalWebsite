@@ -1,6 +1,7 @@
 import type { IndividualSkill } from '../types/types'
 
 export const skills: Array<IndividualSkill> = [
+  //TODO: Use local images instead of icon links
   {
     title: 'TypeScript',
     description:
@@ -24,7 +25,7 @@ export const skills: Array<IndividualSkill> = [
     description:
       'Vue is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be they simple or complex.',
     experience:
-      'With over 3 years of experience, this is the JavaScript framework that I have the most professional experience with. Utilized the Vue Composition API to trigger code during specific lifecycle hooks. Worked with Vuex for modular state management, as well as UIKit for additional styling and UI elements. Outside of Vue I also have one year of experience with React and some minor experience with Angular.',
+      'With over 3 years of experience, this is the JavaScript framework that I have the most professional experience with. Utilized the Vue Composition API to trigger code during specific lifecycle hooks. Worked with Vuex for modular state management, as well as UIKit for additional styling and UI elements.',
     icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLeFHLSr6IXVqgvyUXud88L7r79Dtd4GUgw&usqp=CAU',
     path: 'vue'
   },

@@ -1,14 +1,15 @@
 <template>
-  <div class="mt-4" v-if="$windowWidth > 600">
+  <div class="mt-4" v-if="$windowWidth > screenWidthOptions.small">
     {{ mainDescription }}
   </div>
   <br />
-  <div v-show="$windowWidth > 1000">
+  <div v-show="$windowWidth > screenWidthOptions.large">
     {{ additionalInfo }}
   </div>
 </template>
 
 <script setup lang="ts">
+import { screenWidthOptions } from './objects/const'
 const mainDescription: string = `Hello! My name is Chance, and I'm a Software Developer with multiple years of both Frontend and
     Backend Web Development. I have extensive experience working on enterprise level applications
     using the technologies and tools you see listed below. Feel free to click on any of the icons to

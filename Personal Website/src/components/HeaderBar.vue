@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import HeaderTitle from './HeaderTitle.vue'
 import ContactInfo from './ContactInfo.vue'
+import { screenWidthOptions } from './objects/const'
 </script>
 
 <template>
-  <div v-if="$windowWidth > 600" class="main">
+  <div v-if="$windowWidth > screenWidthOptions.small" class="main">
     <div class="container px-4">
       <div class="row">
         <div class="col img-div p-4 text-center">

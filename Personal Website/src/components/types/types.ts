@@ -5,3 +5,8 @@ export type IndividualSkill = {
   icon: string
   path: string
 }
+
+export type ScreenWidths = {
+  small: number
+  large: number
+}

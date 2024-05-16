@@ -1,5 +1,8 @@
 <template>
-  <div class="m-3" :class="$windowWidth > 600 ? 'contact-info-main' : 'contact-info-mobile'">
+  <div
+    class="m-3"
+    :class="$windowWidth > screenWidthOptions.small ? 'contact-info-main' : 'contact-info-mobile'"
+  >
     <address>
       <strong>{{ contactInfoTitle }}</strong
       ><br />
@@ -20,6 +23,7 @@
 </template>
 
 <script setup lang="ts">
+import { screenWidthOptions } from './objects/const'
 const contactInfoTitle: string = 'Contact Info'
 const email: string = 'chance.croft2@gmail.com'
 const city: string = 'Oklahoma City, OK 73120'
