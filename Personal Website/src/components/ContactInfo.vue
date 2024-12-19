@@ -24,6 +24,7 @@
 
 <script setup lang="ts">
 import { screenWidthOptions } from './objects/const'
+
 const contactInfoTitle: string = 'Contact Info'
 const email: string = 'chance.croft2@gmail.com'
 const city: string = 'Oklahoma City, OK 73120'

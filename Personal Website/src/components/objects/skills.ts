@@ -17,7 +17,7 @@ export const skills: Array<IndividualSkill> = [
       'PHP is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.',
     experience:
       'Over 2 years of experience investigating and resolving bugs related to customer data reporting and incorrectly structured SQL queries within the API calls. Documented all solutions and communicated with overseas teams as necessary. Sanitized user input for dozens of areas of potential SQL injection. Worked primarily with the CodeIgniter framework, with some proof of concept work using Laravel as well.',
-    icon: 'https://tshirtgeek.co/wp-content/uploads/2021/06/com029.jpg',
+    icon: 'https://cdn.iconscout.com/icon/free/png-512/free-php-99-1175127.png?f=webp&w=256',
     path: 'php'
   },
   {
